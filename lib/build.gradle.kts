@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
@@ -19,9 +19,9 @@ java {
 }
 
 application {
-    mainClass.set("org.example.ChessApplication")
+    mainClass.set("com.chess.ChessApplication")
 }
 
-tasks.named<Test>("test") {
+tasks.test {
     useJUnitPlatform()
 }
